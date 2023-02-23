@@ -11,7 +11,7 @@ pipeline {
 
         stage('build') {
           steps {
-            withMaven() {
+            withMaven(maven: 'mule-maven') {
               sh 'mvn -U -B clean package -DskipTests'
             }
 
