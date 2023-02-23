@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="jekins-cicdFlow" doc:id="196aef94-c0aa-4181-b695-ee7561cc9eaa" >
+		<scheduler doc:name="Scheduler" doc:id="0fa68e20-f64d-4150-85bd-61db03cc82a8" >
+			<scheduling-strategy >
+				<fixed-frequency frequency="2" timeUnit="SECONDS"/>
+			</scheduling-strategy>
+		</scheduler>
+		<logger level="INFO" doc:name="Logger" doc:id="f67b4269-56b4-4c47-b8d2-09e6d8925ee8" message="hello"/>
+	</flow>
+</mule>
